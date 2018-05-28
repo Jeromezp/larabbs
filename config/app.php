@@ -39,7 +39,9 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    // 'debug' => env('APP_DEBUG', false),
+    'debug' => env('DEBUGER_ENABLE', false),
+
 
     /*
     |--------------------------------------------------------------------------
@@ -167,6 +169,7 @@ return [
         /*
          * Package Service Providers...
          */
+        App\Providers\EasySmsServiceProvider::class,
 
         /*
          * Application Service Providers...
